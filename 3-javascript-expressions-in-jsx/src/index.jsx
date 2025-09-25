@@ -1,7 +1,19 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
-ReactDOM.render(<h1>Hello World!</h1>, document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const fName = "Danial"
+const lName = "Trody"
+const luckyNumber = 8;
+
+root.render(
+    <>
+    <h1>Hello {`${fName} ${lName}`}!</h1>
+    <p>Your lucky number is {luckyNumber}</p>
+    </>
+);
+
 
 // If you're running this locally in VS Code use the commands:
 // npm install
